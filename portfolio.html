@@ -22,6 +22,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=B612&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+
 
     <style>
         body {
@@ -55,15 +61,31 @@
 
 
         .navbar-brand{
-        font-family: 'Titillium Web', sans-serif;
-        font-size: 30px;
+        font-family: 'Roboto', sans-serif;
+        /* font-family: 'Oswald', sans-serif; */
+        font-weight: bold;
+        font-size: 36px;
         }
 
-        /* .nav-link{
-          font-family: 'B612', sans-serif;
-          font-weight: bolder;
-        } */
+        .nav-link{
+        font-family: 'Roboto', sans-serif;
+        font-size: 18.72px;
+        }
 
+        .text-style{
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        }
+        
+        #header-formatting{
+        /* font-weight: 1; */
+        font-size: 24px
+        }
+
+        .list-spacing{
+            padding-left: 1;
+        }
+        
 
     </style>
 </head>
@@ -72,7 +94,8 @@
     <nav class="navbar navbar-expand-sm navbar-light">
         <div class="container">
             <!-- Here is where you will add your name -->
-            <a class="navbar-brand" href="index.html">Alejandro Estrada/Software Engineer</a>
+            <a class="navbar-brand" >ALEJANDRO ESTRADA <span id="header-formatting">
+                Software Developer</span></a>
             <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -98,15 +121,15 @@
     </nav>
     <div class="background">
         <!-- The container contains all of your body content -->
-        <main class="container">
+        <main class="container text-style">
             <div class="row">
                 <!-- This colum takes up 75% of the page-->
                 <div class="col-lg-8 col-md-8 mt-3 mb-3">
-                    <div class="row">
+                    <!-- <div class="row">
                         <div class="col-sm-12">
-                            <header><h1>My Projects</h1></header>
+                            <header><h3>My Projects</h3></header>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- This is the first entry of your projects -->
                     <div class="row mt-3">
                         <div class="col-lg-4 col-md-12">
@@ -116,7 +139,7 @@
                         </div>
                         <div class="col-lg-8 col-md-12">
                             <h3>Among Us Imposter Game</h3>
-                            <p>A game where users must find the space with the imposter. In order to win the user must not be killed and find the imposter before a set number of turns go by. The skelteon ueses HTML, styling is CSS, and the logic for the game is written out in JavaScript.</p>
+                            <p>A game where users must find the space with the imposter. In order to win the user must not be killed and find the imposter before a set number of turns go by. The skeleton uses HTML, styling is CSS, and the logic for the game is written out in JavaScript.</p>
 
                         </div>
                     </div>
@@ -148,18 +171,18 @@
                 </div>
                 <!-- This column takes up 25% of the page-->
                 <div class="col-lg-4 col-md-4 col-sm-12" id="whatIKnow">
-                    <div class="row">
+                    <!-- <div class="row">
                         <div class="col-sm-12">
-                            <h2><strong>What I contribute:</strong></h2>
+                            <h3>What I contribute:</h3>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- This is your first entry-->
                     <div class="row">
                         <div class="col-sm-12">
 
-                          <h5>My Stack</h5>
+                          <h4>My Stack:</h4>
                             <p>
-                              <ul>
+                              <ul class="list-spacing">
                                 <li>JavaScript</li>
                                 <li>Ruby</li>
                                 <li>Ruby on Rails</li>
@@ -182,15 +205,15 @@
                     <!-- This is your third entry -->
                     <div class="row">
                         <div class="col-sm-12">
-                            <h5>Transferable Skills:</h5>
-                            <ul>
-                              <li>Problem Solving</li>
-                                <li>Confilict Resolution</li>
-                                  <li>Critical Thinking</li>
+                            <h4>Transferable Skills:</h4>
+                            <ul class="list-spacing">
+                                <li>Problem Solving</li>
+                                <li>Conflict Resolution</li>
+                                <li>Critical Thinking</li>
                                 <li>Leadership</li>
                                 <li>Adaptiveness</li>
-                                <li>Teamplayer</li>
-                                <li>Strong Communicaton</li>
+                                <li>Team-player</li>
+                                <li>Strong Communication</li>
                             </ul>
                         </div>
                     </div>

@@ -21,11 +21,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=B612&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+
 
     <style>
         body {
             background-color: #D3D3D3;
-            font-family: 'B612', sans-serif;
+            /* font-family: 'B612', sans-serif; */
+            font-family: 'Roboto', sans-serif;
         }
         footer {
             background-color: #D3D3D3;
@@ -52,8 +59,25 @@
 
 
         .navbar-brand{
-        font-family: 'Titillium Web', sans-serif;
-        font-size: 30px;
+        font-family: 'Roboto', sans-serif;
+        /* font-family: 'Oswald', sans-serif; */
+        font-weight: bold;
+        font-size: 36px;
+        }
+
+        .nav-link{
+        font-family: 'Roboto', sans-serif;
+        font-size: 18.72px;
+        }
+
+        .text-style{
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        }
+        
+        #header-formatting{
+        /* font-weight: 1; */
+        font-size: 24px
         }
 
 
@@ -63,8 +87,9 @@
     <!-- This is your navigation bar. See: https://getbootstrap.com/docs/4.0/components/navbar/-->
     <nav class="navbar navbar-expand-sm navbar-light">
         <div class="container">
-            <!-- Here is where you will add your name -->
-            <a class="navbar-brand" >Alejandro Estrada/Software Engineer</a>
+            <!-- Name and title are here -->
+            <a class="navbar-brand" >ALEJANDRO ESTRADA <span id="header-formatting">
+            Software Developer</span></a>
             <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -88,7 +113,7 @@
             </div>
         </div>
     </nav>
-    <div class="background">
+    <div class="background text-style">
         <!-- The container contains the grid, which is where you will want to place all of your body content. The grid has 12 columns per row. One full row of content is 12 columns. 2 content columns are 6 each. 4 content columns are 3 per. And 6 content columns are 2 each. See: https://getbootstrap.com/docs/4.0/layout/overview/
         <Main> tags are like <div> tags but tell google what kind of content is inside. Only 1 main tag per page. -->
         <main class="container">
@@ -97,16 +122,22 @@
                 Note: Columns in a row need to add up to 12! -->
                 <div class="col-md-6 col-sm-12 mt-3">
                     <!-- <Header> tags are like <div> tags, but tell google what kind of content is inside. This is called Semantic HTML. Only 1 header tag per page. -->
-                    <header><strong><h2>Who am I?</h2></strong></header>
+                    <header><strong><h4>Who am I?</h4></strong></header>
                     <div id="aboutMe">
                         <!-- Heading tags, or <H#> tags, are not the same as <Header>. They go from H1-H6 in order of what is important on your page. Typically, you will have 1 <h1> tag on a page, and multiple h2-h6 tags depending on your content. -->
                         <!-- <h6>About Me</h6> -->
                         <!-- The <p> tag is used to designate paragraphs of text -->
                         <p class="myText">
-                          Two of the activities that bring me the most joy are coding and being outside in nature. Although they seem like polar opposites both have lead to the greatest discoveries about both the subject and myself. I am a fullstack web developer motivated by an unquenchable thirst for knowledge expansion and creative problem solving. I am committed to delivering quality code and overcoming new and difficult challenges. <br>Prior to being a web developer I was a Park Ranger where my team and I were responsible for 5 parks in San Diego County. There I devleoped strong leadership, interpersonal communication, and team development skills. I also was challenged with thinking on my feet and finding creative solutions daily. I have devleoped many technical skills and with my inventory of transferable skills I am ready to jump into a team and help contribute in making high quality code.
+                          Two of the activities that bring me the most joy are coding and being outside in nature. Although they seem like polar opposites both have lead to the greatest discoveries about both the subject and myself. I am a fullstack web developer motivated by an unquenchable thirst for knowledge expansion and creative problem solving. I am committed to delivering quality code and overcoming new and difficult challenges. <br>Prior to being a web developer I was a Park Ranger where my team and I were responsible for 5 parks in San Diego County. There I developed strong leadership, interpersonal communication, and team development skills. I also was challenged with thinking on my feet and finding creative solutions daily. I have developed many technical skills and with my inventory of transferable skills I am ready to jump into a team and help contribute in making high quality code.
                         </p>
-                        <h3>My Experience</h3>
+                        <h4>My Experience</h4>
                         <p class="myText">
+                            <em><u>Victorise: Juniror Developer (Intern)</u></em>
+                            <ul>
+                              <li> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, ab porro. Placeat, incidunt ex, a sequi sit officia eos mollitia vel quidem, magnam amet dolore provident excepturi soluta rem maxime!</li>
+                              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto nostrum labore, est quos sapiente dolores sit. Quos nihil ea fugiat? Perferendis, animi officiis iusto quaerat soluta ullam perspiciatis! Veritatis, aspernatur.</li>
+                              <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi fugiat delectus quaerat, ex, praesentium error atque labore ab numquam quisquam sequi impedit, mollitia recusandae dolor aperiam eos eveniet! Ab, odio?</li>
+                            </ul>
                           <em><u>LEARN Academy: Junior Web Developer</u></em>
                             <ul>
                               <li>Completed over 480 hours of direct coding experience in an intensive remote full-stack web development bootcamp.</li>
